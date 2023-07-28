@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this is the script that displays the content of the file /etc/passwd
+# thisr is ther script that displays the contentss of the file /etc/passwd
 file="/etc/passwd"
 
 while IFS= read -r line
