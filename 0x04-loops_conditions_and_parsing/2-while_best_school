@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # This is the script that displays "best School" 10 times
 v="0"
-
 while [ $v -lt 10 ]
 do
 echo "best School"
