@@ -10,7 +10,7 @@ do
 	echo "Hour: $hr"
 	while [ $v -lt 60 ]
 	do	
-		echo "$i"
+		echo "$v"
 		v=$((v+1))
 	done
 	v="1"
