@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# thisr is ther script that display the contentss of the file /etc/passwd, using the while # loop + IFS.
+# thisr is ther script that display the contentss file /etc/passwd, using the while # loop + IFS.
 file="/etc/passwd"
 
 
