@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# This is the script loops from 1 to 10 displaying
+# "bad luck" for the 4th loop iterationss
+# "good luck" for the 8th loop iterationss
+# "best School" for the other iterations
+v="0"
+
+while [ $v -lt 10 ]
+do
+if [ $v = 3 ]
+then
+echo "bad luck"
+elif [ $v = 7 ]
+then
+echo "good luck"
+else
+echo "best School"
+fi
+v=$((v+1))
+done
