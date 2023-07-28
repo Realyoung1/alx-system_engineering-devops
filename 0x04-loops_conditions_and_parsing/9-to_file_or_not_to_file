@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# This is the script that gives you information about the
+# bestschool FILE.
+FILE="bestschool"
+
+if [ -e "$FILE" ]
+then
+    echo "bestschool file exists"
+    if [ ! -s "$FILE" ]
+    then
+        echo "bestschool file is empty"
+    else
+        echo "bestschool file is not empty"
+    fi
+    if [ -f "$FILE" ]
+    then
+        echo "bestschool is a regular file"
+    fi
+else
+    echo "bestschool file does not exist"
+fi
