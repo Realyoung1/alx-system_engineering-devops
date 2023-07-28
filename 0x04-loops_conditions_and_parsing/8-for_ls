@@ -5,5 +5,5 @@
 # Display only the part of the name after the fisrt dash
 for v in *
 do
-	echo "$v" | cut -d "-" -f2
+	echo "$v" | cut -d "-" -f 2
 done
