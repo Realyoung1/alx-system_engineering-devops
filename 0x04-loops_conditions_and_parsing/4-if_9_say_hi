@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# This is the script is displaying "best School" 10 times and "Hi" in the 9th
+v="0"
+
+while [ $v -lt 10 ]
+do
+echo "best School"
+if [ $v = 8 ]
+then
+echo "Hi"
+fi
+v=$((v+1))
+done
