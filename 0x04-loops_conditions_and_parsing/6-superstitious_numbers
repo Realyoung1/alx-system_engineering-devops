@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# This is the script loops from 1 to 20 displaying
+# "4" and then "bad luck from China" for the 4th iterationss
+# "9" and then "bad luck from Japan" for the 4th iterationss
+# "17" and then "bad luck from Italy" for the 4th iterationss
+v="1"
+
+while [ $v -lt 21 ]
+do
+case $v in
+4)
+	echo "$v"
+	echo "bad luck from China"
+	;;
+9)
+	echo "$v"
+	echo "bad luck from Japan"
+	;;
+17)
+	echo "$v"
+	echo "bad luck from Italy"
+	;;
+*)
+	echo "$v"
+	;;
+esac
+v=$((i+1))
+done
