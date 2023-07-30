@@ -1,13 +1,12 @@
 #!/usr/bin/env bash
-# This is the script is displaying "best School" 10 times and "Hi" in the 9th
-v="0"
-
-while [ $v -lt 10 ]
+#displays Best School 10 times, but for the 9th iteration, displays
+#Best School and then Hi on a new line
+i=1
+while [ $i -le 10 ]
 do
-echo "best School"
-if [ $v = 8 ]
-then
-echo "Hi"
-fi
-v=$((v+1))
+	echo "Best School"
+	if [ $i -eq 9 ]; then
+	   echo "Hi"
+	fi
+	i=$((i+1))
 done
