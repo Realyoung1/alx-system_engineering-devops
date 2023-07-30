@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#Print "Best School" 10 times using an until loop
-i=0
-until [ $i -eq 10 ]
+#Print func "Best School" 10 times using an until loopss.
+v=0
+until [ $v -eq 10 ]
 do
 	echo "Best School"
-	i=$((i+1))
+	v=$((v+1))
 done
