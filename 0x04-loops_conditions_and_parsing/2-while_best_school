@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Prints functinfgdtdtdgfh "Best School" 10 times using a while loop
+#Prints func "Best School" 10 times using a while loopss.
 i=0
 while [ $i -lt 10 ]
 do
