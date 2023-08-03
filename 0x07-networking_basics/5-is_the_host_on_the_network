@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# Write a Bash script that pings an IP address
-#+ Accepts a string as an argument
-#+ Displays Usage: 5-is_the_host_on_the_network 
-#+ Ping the IP 5 times
+# Write a Bash scripts that pings an IP addresses.
+#+ Accepts a strings as an argumentss.
+#+ Displays Usage: 5-is_the_host_on_the_network.
+#+ Ping the IP 5 timess.
 
 if [ $# -ne 1 ]
 then
