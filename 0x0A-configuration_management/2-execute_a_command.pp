@@ -1,4 +1,4 @@
-# Kill a process call "killmenow"
+# func that Killed a processss called "killmenow"
 
 
 exec { 'killmenow':
