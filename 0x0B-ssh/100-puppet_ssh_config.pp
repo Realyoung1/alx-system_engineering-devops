@@ -1,6 +1,4 @@
 # Make passwordAuthentication and add new private key
-include stdlib
-
 file_line { 'replace passwordAuthentication':
   ensure  => 'present',
   path    => '/etc/ssh/ssh_config',
@@ -9,8 +7,8 @@ file_line { 'replace passwordAuthentication':
   match   => 'PasswordAuthentication yes',
 }
 
-file_line { 'add the private key ~/.ssh/holberton':
+file_line { 'add the private key ~/.ssh/school':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
-  line   => 'IdentityFile ~/.ssh/holberton',
+  line   => 'IdentityFile ~/.ssh/school',
 }
