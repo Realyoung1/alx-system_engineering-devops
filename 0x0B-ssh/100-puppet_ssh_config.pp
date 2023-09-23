@@ -19,6 +19,7 @@ file_line { 'replace passwordAuthentication':
   match   => 'PasswordAuthentication yes',
 }
 
+
 file_line { 'add the private key ~/.ssh/school':
   ensure => 'present',
   path   => '/etc/ssh/ssh_config',
