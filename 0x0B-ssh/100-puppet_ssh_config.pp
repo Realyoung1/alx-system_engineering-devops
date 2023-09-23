@@ -1,4 +1,6 @@
-# Make passwordAuthentication and add new private key
+# Making passwordAuthentication and adding new private keya
+include stdlib
+
 file_line { 'replace passwordAuthentication':
   ensure  => 'present',
   path    => '/etc/ssh/ssh_config',
