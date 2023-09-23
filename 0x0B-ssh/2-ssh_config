@@ -6,13 +6,13 @@ ForwardAgent no
 #   ForwardX11 no
 #   ForwardX11Trusted yes
 #   RhostsRSAAuthentication no
+#   GSSAPIDelegateCredentials no
+#   GSSAPIKeyExchange no
+#   GSSAPITrustDNS no
 #   RSAAuthentication yes
 #   PasswordAuthentication no
 #   HostbasedAuthentication no
 #   GSSAPIAuthentication no
-#   GSSAPIDelegateCredentials no
-#   GSSAPIKeyExchange no
-#   GSSAPITrustDNS no
 #   BatchMode no
 #   CheckHostIP yes
 #   AddressFamily any
