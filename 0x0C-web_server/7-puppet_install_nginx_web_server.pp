@@ -4,7 +4,7 @@ package { 'nginx':
   ensure => installed,
 }
 
-file_line { 'real':
+file_line { 'realdevices':
   ensure   => present,
   path     => '/etc/nginx/sites-available/default',
   after    => 'server_name _;',
