@@ -13,8 +13,8 @@ file_line { 'realdevices':
 }
 
 file { '/var/www/html/index.html':
-  path    => '/var/www/html/index.html'
   content => 'Hello World!',
+  path    => '/var/www/html/index.html'
 }
 
 service { 'nginx':
