@@ -1,7 +1,7 @@
 # Installing and configing the nginx using puppet
 package { 'nginx':
-  ensure => installed,
   name   => 'nginx',
+  ensure => installed,
 }
 
 file_line { 'title':
