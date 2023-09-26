@@ -18,4 +18,4 @@ sed -i '/VirtualHost>/a <VirtualHost *:8080>\nServerAdmin webmaster@localhost\nD
 
 
 
-apache2 service has restarted
+service apache2 restarted
