@@ -13,4 +13,4 @@ fi
 
 
 
-scp -q -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i "$4" "$1" "$3@$2":~/ 
+scp -o -q StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -i "$4" "$1" "$3@$2":~/ 
