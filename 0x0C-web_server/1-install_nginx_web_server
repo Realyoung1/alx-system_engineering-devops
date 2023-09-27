@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Installed nginx on your web-01
-# Push from client a file
+# Push from the client to a file
 
 apt-get update
 apt-get -y install nginx
