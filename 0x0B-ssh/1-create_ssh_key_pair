@@ -2,4 +2,4 @@
 # script which Created a ssh key pair.
 
 
-ssh-keygen -t rsa -b 4096 -P betty -f school
+sh-keygen -q -b 4096 -t rsa -N 'betty' -f ./school
