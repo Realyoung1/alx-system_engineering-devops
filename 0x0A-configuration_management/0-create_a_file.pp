@@ -1,4 +1,4 @@
-# funcs which Createdd a file in /tmp
+# fucs which Createdd a file in /tmp
 
 file { '/tmp/school' :
     path    => '/tmp/school',
