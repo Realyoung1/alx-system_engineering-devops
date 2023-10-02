@@ -1,0 +1,7 @@
+erver01 login
+
+eval $("ssh-agent")
+
+ssh-add ~/.ssh/school
+
+ssh ubuntu@52.91.148.167
