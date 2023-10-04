@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# the debugs will be made sweet and short
+# the scripted is not more than five lines long
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+pkill -1 nginx
