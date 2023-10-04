@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # lets debug nginx likes port 90
 # the bash scripted is below
-rm /etc/nginx/sites-enabled/default
-ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-service nginx restar
+sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
+service nginx restart
