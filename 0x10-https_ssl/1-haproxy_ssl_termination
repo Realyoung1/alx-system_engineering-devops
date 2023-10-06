@@ -38,3 +38,9 @@ frontend ft_test
     bind    :443 ssl crt /etc/letsencrypt/live/www.realdevicesstore.tech/www.realdevicesstore.tech.pem
     bind    :80
     redirect scheme https code 301 if !{ ssl_fc
+
+backend www_backend
+        balance roundrobin
+        redirect scheme https if !{ ssl_fc }
+        server 281332-web-01 52.91.148.167:80 check
+        server 281332-web-02 52.86.158.155:80 check
