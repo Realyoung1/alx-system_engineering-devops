@@ -34,18 +34,12 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 frontend  http_front
-        bind *:80
-        mode http
         bind *:443 ssl crt /etc/letsencrypt/live/www.realdevicesstore.tech/fullchain.pem
-        redirect scheme https if !{ ssl_fc }
-        default_backend http_back
-backend http_back
-        balance roundrobin
-        server 281332-web-01 52.91.148.167:80 check
-        server 281332-web-02 52.86.158.155:80 check
+        http-request add-header x-forwarded-proto http
+        http-request redirect scheme https if !{ ssl_fc }
+        use_backend http_back
 
-listen http-in
-        bind :80
-        balance roundrobin
+backend http_back
+        redirect scheme https if !{ ssl_fc }
         server 281332-web-01 52.91.148.167:80 check
         server 281332-web-02 52.86.158.155:80 check
