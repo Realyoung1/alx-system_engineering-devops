@@ -41,11 +41,11 @@ frontend  http_front
         default_backend http_back
 backend http_back
         balance roundrobin
-        server 93511-web-01 52.91.148.167:80 check
-        server 93511-web-02 52.86.158.155:80 check
+        server 281332-web-01 52.91.148.167:80 check
+        server 281332-web-02 52.86.158.155:80 check
 
 listen http-in
         bind :80
         balance roundrobin
-        server 93511-web-01 52.91.148.167:80 check
-        server 93511-web-02 52.86.158.155:80 check
+        server 281332-web-01 52.91.148.167:80 check
+        server 281332-web-02 52.86.158.155:80 check
