@@ -1,4 +1,4 @@
-lobal
+global
         log /dev/log    local0
         log /dev/log    local1 notice
         chroot /var/lib/haproxy
@@ -33,23 +33,8 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend  www-http
-        bind        0.0.0.0:80
-        http-request add-header X-Forwarded-Proto http
-        default_backend www-backend
-
-frontend  www-https
-        bind        0.0.0.0:443 ssl crt /etc/letsencrypt/live/www.realdevicesstore.tech/www.realdevicesstore.tech.pem
-        http-request add-header X-Forwarded-Proto https
-        acl        letsencrypt-acl path_beg /.well-known/acme-challenge/
-        use_backend letsencrypt-backend if letsencrypt-acl 
-        default_backend www-backend
-
-backend www_backend
-        balance        roundrobin
-        redirect scheme https if !{ ssl_fc }
-        server 281332-web-01 52.91.148.167:80 check
-        server 281332-web-02 52.86.158.155:80 check
-
-backend letsencrypt-backend
-        server letsencrypt 100.25.220.175
+frontend ft_test
+    mode    http
+    bind    :443 ssl crt /etc/letsencrypt/live/www.realdevicesstore.tech/www.realdevicesstore.tech.pem
+    bind    :80
+    redirect scheme https code 301 if !{ ssl_fc
