@@ -1,0 +1,14 @@
+WHAT HAPPENS WHEN YOU TYPE https://www.google.com ON YOUR WEB BROWSER AND PRESS ENTER?
+
+After typing https://www.google.com on your web browser, a lot processes happens on you web browser, in this article we will discusssing all these processes that happens on your web browser after you typed https://www.google.com and pess ENTER.
+Professionally bellow are the list of what happens and we will discuss them one by one.
+
+
+    DNS request - The first thing that happens is that your browser sends a Domain Name System (DNS) request to your internet service provider's (ISP) DNS servers, which in turn send a request to the root DNS server. The root DNS server then directs the request to the top-level domain (TLD) server, which manages all domain names that end with the same TLD (in this case, ".com"). The TLD server then forwards the request to the domain's authoritative DNS server, which response with the IP address of the web server hosting the website.
+    TCP/IP - The second thing is that, the browser will open a Transmission Control Protocol (TCP) connection with the web server at the IP address that was received from the DNS lookup. TCP then ensures a reliable transmission of data by breaking it down into small packets and reassembling them at the destination. The Internet Protocol (IP) is used to route these packets across the internet.
+    Firewall - 
+    HTTPS/SSL
+    Load-balancer
+    Web server
+    Application server
+    Database
