@@ -6,9 +6,21 @@ Professionally bellow are the list of what happens and we will discuss them one 
 
     DNS request - The first thing that happens is that your browser sends a Domain Name System (DNS) request to your internet service provider's (ISP) DNS servers, which in turn send a request to the root DNS server. The root DNS server then directs the request to the top-level domain (TLD) server, which manages all domain names that end with the same TLD (in this case, ".com"). The TLD server then forwards the request to the domain's authoritative DNS server, which response with the IP address of the web server hosting the website.
     TCP/IP - The second thing is that, the browser will open a Transmission Control Protocol (TCP) connection with the web server at the IP address that was received from the DNS lookup. TCP then ensures a reliable transmission of data by breaking it down into small packets and reassembling them at the destination. The Internet Protocol (IP) is used to route these packets across the internet.
-    Firewall - 
-    HTTPS/SSL
-    Load-balancer
-    Web server
-    Application server
-    Database
+    Firewall - This will check the packets to ensure they are not a security threat before allowing them to pass through.
+    HTTPS/SSL - If the website you are accesing is secured with HTTPS (Hypertext Transfer Protocol Secure), the web server will send an SSL (Secure Sockets Layer) certificate to your browser to verify its identity. This certificate includes a public key that your browser uses to encrypt data before sending it to the server. This ensures that any data sent between your browser and the server is secure and cannot be intercepted by a third party.
+    Load-balancer - The a load-balancer may be used to distribute incoming requests evenly among them to improve performance and ensure availability, if the website is hosted on multiple server.
+    Web server - Connections are established on th TCP and any security measures have been taken care of, the web server receives the request from your browser and sends back the webpage content.
+    Application server - An pplication server may be used to process the request and send back the appropriate content. This could involve accessing a database or other backend serviceg, if the website is dynamic and requiers data to be generated on-the-fly.
+    Database - A database is a collection of information that is organized so that it can be easily accessed, managed and updated. Computer databases typically contain aggregations of data records or files, containing the data for applications used by companies i.e: about sales transactions or interactions with specific customers.
+
+
+So when you type https://www.google.com and hit enter key, what you doing is requesting throught it URL (Uniform Resource Locator) every single URL on the internet has a unique IP address assigned to it. and then...
+
+    Firstly, The browser checks the cache for a DNS record to find the corresponding IP address of https://www.google.com, which stores DNS information that the computer has recently retrieved.
+    Secondly, the browser checks the OS cache. If it is not in the browser cache, the browser will make a system call (i.e., gethostname on Windows) to your underlying computer OS to fetch the record since the OS also maintains a cache of DNS records.
+    Thirdly, it checks the router cache. If it’s not on your computer, the browser will communicate with the router that maintains its’ own cache of DNS records.
+    Fourthly, it checks the ISP cache. If all steps fail, the browser will move on to the ISP. Your ISP maintains its’ own DNS server, which includes a cache of DNS records, which the browser would check with the last hope of finding your requested URL
+    If ISP's DNS don't have the record they ask the Root DNS servers. they contact the root nameservers. These thirteen nameservers contain pointers for all of the Top-Level Domains (TLDs), such as '.com', '.net' and '.org'. If you are looking for 'https://www.google.com.', the root nameservers look at the TLD for the domain - 'https://www.google.com'- and direct the query to the TLD DNS nameservers responsible for all '.com' pointers.
+    Authoritative nameservers contain all of the DNS records for a given domain, such as host records (which store IP addresses), MX records (which identify nameservers for a domain), and so on. Since you are looking for the IP address of 'https://www.google.com', the recursive server queries the authoritative nameservers and asks for the host record for 'https://www.google.com'.
+    The recursive DNS server receives the host record for 'https://www.google.com' from the authoritative nameservers, If anyone else requests the host record for 'https://www.google.com', the recursive servers will already have the answer.
+    Lastly, the recursive server gives the host record back to your computer. Your computer stores the record in its cache, reads the IP address from the record, then passes this information to the web browser. Your browser then opens a connection to the IP address ' 31.13.67.35' on port 80 (for HTTP).
