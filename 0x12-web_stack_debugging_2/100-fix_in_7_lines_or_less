@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# my script is notmore than 7 lines
+# one nee line at the end of the file
+# all the requirements was respedted
+# i didnt ise ;
+# i didnt use &&
+# i didnt use wget
+# i didnt use my previous answer file
+
+chmod 777 /etc/nginx/nginx.conf
+chown nginx:nginx /etc/nginx/nginx.conf
+sed -i "s/80/8080/g" /etc/nginx/sites-available/default
+pkill -9 apache
+su nginx -c "service nginx restart"

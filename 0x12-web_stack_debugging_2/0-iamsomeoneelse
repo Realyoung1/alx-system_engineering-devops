@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# the bash scripted that aceepted arga
+# this ran whoami command under user passed args
+# i tried my scripted theough different users
+
+sudo -u "$1" whoami 
