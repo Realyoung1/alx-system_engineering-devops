@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 udo apt-get update
 sudo apt-get install ufw
 sudo ufw default deny incoming
