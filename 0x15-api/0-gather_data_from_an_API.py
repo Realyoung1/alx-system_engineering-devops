@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-    Uses the fake API to get an employer
+    I used urllib or requests moduled
+    my scripted accepted int as para
+    my scrit displayed standard
+    second N next displayed TASK_TITLE
 """
 import requests
 from sys import argv
