@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """
-    Uses the fake API to get all employers and their todos and export as json
+    all tasls from the employee was recodrded
+    i used the format give
+    i used the names given todo_all_employees.json
 """
 import json
 import requests
