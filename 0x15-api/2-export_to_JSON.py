@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 """
-    Uses the fake API to get an employer and export the info in json formater
+     i recorded all the task ownerd by the employer
+    the format used was "USER_ID","USERNAME"
+    "TASK_COMPLETED_STATUS","TASK_TITLE"
+    USER_ID.csv is the first name
 """
 import json
 import requests
