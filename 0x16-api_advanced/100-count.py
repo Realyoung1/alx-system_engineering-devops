@@ -5,11 +5,6 @@
     If word_list contains the same
     word (case-insensitive
     Prototype: def count_words(
-    subreddit, word_list
-    Query the Reddit API,
-    parses the title of all hot
-    articles,
-    and prints a sorted
 """
 import requests
 
