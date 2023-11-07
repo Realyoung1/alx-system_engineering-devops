@@ -1,6 +1,10 @@
 #!/usr/bin/python3
 """
-    Uses the reddit API to print the number of subscribers of a subreddit
+    0 must be rerurned in case its not a valid subreddi
+    Prototype: def number_of_subscribers(subreddit)
+    Ensure that you are not following redirects.
+    NOTE: Invalid subreddits may return a redirect
+    to search results.
 """
 import requests
 from sys import argv
