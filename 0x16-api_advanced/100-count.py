@@ -7,7 +7,6 @@
     parses the title of all hot articles,
     and prints a sorted
 """
-
 import requests
 
 
