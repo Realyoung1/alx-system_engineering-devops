@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+#  fixing a problem
 
 exec {'replace-1':
   provider => shell,
